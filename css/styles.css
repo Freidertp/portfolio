@@ -108,7 +108,7 @@
    width: 12.5rem;
    height: 12.5rem;
    background: linear-gradient(to right, #7b7a87 33%, #a8afb0 67%, #bacacd 100%),
-      url('/assets/av.png');
+      url('../assets/av.png');
    background-blend-mode: overlay;
    background-size: cover;
 
