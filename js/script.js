@@ -1,11 +1,13 @@
 const body = document.querySelector('body');
 const container = document.querySelector('.container')
 const navLink = document.querySelector('.nav__link')
-const menuIcon = document.querySelector('.menu-icons__icon')
+const menuIcon = document.querySelector('.menu-icon')
 const section = document.querySelector('.section')
 const menu = document.querySelector('.menu')
 const figure = document.querySelector('.figure-background')
 const image = document.querySelector('.figure-background__img')
+
+
 
 const toggleMenu = () => {
    container.getAttribute('aria-hidden') === 'false'
