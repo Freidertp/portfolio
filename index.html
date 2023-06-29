@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/styles.css">
-   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> <!-- FAVICON -->
+   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lobster+Two&display=swap"
@@ -17,17 +17,52 @@
 
 <body>
 
-   <div class="container" aria-hidden="false">
+   <div class="container" id="home" aria-hidden="false">
 
       <header class="header">
          <a href="/" class="nav__link">FreyDev</a>
 
          <div class="menu-icons">
-            <button class="menu-icons__icon" aria-hidden="false"></button>
+            <button class="menu-icons__icon"></button>
          </div>
       </header>
 
-      <section class="section" id="home">
+      <div class="menu">
+
+         <ul class="top-span">
+            <a href="#experience">
+               <li class="span__menu">Experience</li>
+            </a>
+            <a href="#projects">
+               <li class="span__menu">Projects</li>
+            </a>
+            <a href="#about">
+               <li class="span__menu">About</li>
+            </a>
+            <a href="#contact">
+               <li class="span__menu">Contact</li>
+            </a>
+
+
+            <div class="bottom-span">
+               <p class="span__menu--op">SAY HELLO</p>
+               <a href="mailto:freidertp@gmail.com" class="span__menu">hello@itsfrey.dev</a>
+
+               <div class="bottom-span-imgs">
+                  <a href="https://www.linkedin.com/in/freider-torres/" target="_blank ">
+                     <img src="assets/linkedin.png" alt="githublogo">
+                  </a>
+                  <a href="https://github.com/Freidertp" target="_blank ">
+                     <img src="assets/github2.png" alt="linkedinlogo">
+                  </a>
+               </div>
+
+            </div>
+
+      </div>
+
+
+      <section class="section">
 
          <div class="wrapper-content">
             <div class="top-content">
@@ -74,7 +109,8 @@
          <div class="span">
             <h1 class="span__h1">Design</h1>
             <p class="span__p">
-               I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I
+               I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but
+               I
                design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me
                (~_^).
                I'm committed to creating fluent user experiences while staying fashionable.
@@ -145,9 +181,12 @@
                <h3 class="span__project-title-h3">Alura Encryptor</h3>
                <p class="span__p">
                   During my participation in the Alura Encryptor challenge project, i gained experience in frontend
-                  development using HTML, CSS, and JavaScript. I integrated an external API to display dynamic data on
-                  the website. I faced challenges in responsive design, layout, and technical problemsolving. I learned
-                  to optimize the site's performance. This experience strengthened my frontend development skils and my
+                  development using HTML, CSS, and JavaScript. I integrated an external API to display dynamic data
+                  on
+                  the website. I faced challenges in responsive design, layout, and technical problemsolving. I
+                  learned
+                  to optimize the site's performance. This experience strengthened my frontend development skils and
+                  my
                   ability to tackle challenges in web development.
                </p>
                <figure class="underline"></figure>
@@ -159,9 +198,12 @@
                <h3 class="span__project-title-h3">NetFrey</h3>
                <p class="span__p">
                   During my participation in the Alura Encryptor challenge project, i gained experience in frontend
-                  development using HTML, CSS, and JavaScript. I integrated an external API to display dynamic data on
-                  the website. I faced challenges in responsive design, layout, and technical problemsolving. I learned
-                  to optimize the site's performance. This experience strengthened my frontend development skils and my
+                  development using HTML, CSS, and JavaScript. I integrated an external API to display dynamic data
+                  on
+                  the website. I faced challenges in responsive design, layout, and technical problemsolving. I
+                  learned
+                  to optimize the site's performance. This experience strengthened my frontend development skils and
+                  my
                   ability to tackle challenges in web development.
                </p>
                <figure class="underline"></figure>
@@ -181,7 +223,8 @@
             </p>
             <p class="span__p--white">
                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates obcaecati officia dolore
-               distinctio aliquid possimus eveniet architecto nobis quos? Dolorum labore corporis enim aut perferendis
+               distinctio aliquid possimus eveniet architecto nobis quos? Dolorum labore corporis enim aut
+               perferendis
                quis nulla ex! Tenetur.
             </p>
 
@@ -218,11 +261,15 @@
             <span class="span__p--white footer-span">SAY HELLO</span>
             <ul class="list-footer">
                <li class="list-footer-li"><a class="list-footer__item"
-                     href="mailto:freidertp@gmail.com">hello@itsfrey.dev</a></li>
+                     href="mailto:freidertp@gmail.com">hello@itsfrey.dev</a>
+               </li>
+
+               <li class="list-footer-li"><a class="list-footer__item">My CV</a></li>
+
                <li class="list-footer-li"><a class="list-footer__item"
                      href="https://www.linkedin.com/in/freider-torres/" target="_blank">LinkedIn</a>
                </li>
-               <li class="list-footer-li"><a class="list-footer__item">My CV</a></li>
+
                <li class="list-footer-li"><a class="list-footer__item" href="https://github.com/Freidertp"
                      target="_blank">Github</a></li>
             </ul>
@@ -233,38 +280,9 @@
             </div>
          </div>
       </footer>
-   </div>
-
-   <div class="container-noscroll">
-      <nav class="header-after">
-         <a href="/" class="nav__link-after">FreyDev</a>
-         <div class="menu-icons-after">
-            <button class="menu-icons__icon-after" aria-hidden="false"></button>
-         </div>
-      </nav>
-
-      <nav class="body-noscroll" aria-hidden="true">
-         <ul class="nav-list">
-            <li class="nav-list-li"><a href="#experience" class="list-a">Skills</a></li>
-            <li class="nav-list-li"><a href="#projects" class="list-a">Projects</a></li>
-            <li class="nav-list-li"><a href="#about" class="list-a">About</a></li>
-            <li class="nav-list-li"><a href="#contact" class="list-a">Contact</a></li>
-         </ul>
-
-         <div class="hello">
-            <p class="span-nav">SAY HELLO</p>
-            <a href="mailto:freidertp@gmail.com" class="list-a">hello@itsfrey.dev</a>
-
-            <div class="icons-nav">
-               <img src="assets/github2.png" alt="LinkedIn"><a href=""></a></img>
-               <img src="assets/linkedin.png" alt=""><a href=""></a></img>
-            </div>
-
-         </div>
-      </nav>
-
 
    </div>
+
    <script src="js/script.js"></script>
 </body>
 
