@@ -20,8 +20,8 @@ const toggleMenu = () => {
    menu.style.display = isMobile && isContainerHidden ? 'flex' : 'none';
    navLink.style.color = isMobile && isContainerHidden ? '#4831d4' : '#ccf381';
    menuIcon.classList.replace(
-      isMobile && isContainerHidden ? 'menu-icons__icon' : 'menu-icons__icon--newcolor',
-      isMobile && isContainerHidden ? 'menu-icons__icon--newcolor' : 'menu-icons__icon'
+      isMobile && isContainerHidden ? 'menu-icon' : 'menu-icon--newcolor',
+      isMobile && isContainerHidden ? 'menu-icon--newcolor' : 'menu-icon'
    );
    section.style.display = isMobile && isContainerHidden ? 'none' : 'flex';
    figure.style.display = isMobile && isContainerHidden ? 'none' : 'block';
