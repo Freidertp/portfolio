@@ -29,7 +29,7 @@
    width: 100vw;
    height: 100vh;
    top: 0;
-   left: 0;
+   right: 0;
    gap: 5rem;
    background-color: white;
    animation: fadeInLeft .5s;
@@ -564,9 +564,38 @@
 
    }
 
+   .header {
+      padding: 2rem 2rem 4rem 2rem;
+      background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
+   }
+
+   .menu-icon {
+      width: 1.5rem;
+   }
+
    .avatar-content {
-      bottom: 7rem;
-      right: 6rem;
+      bottom: 6.5rem;
+      right: 7.5rem;
+   }
+
+   .figure-background,
+   .figure-background__img {
+      width: 10rem;
+      height: 10rem;
+   }
+
+   .section {
+      background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
+   }
+
+   .top-content__p {
+      line-height: normal;
+      margin-top: 1rem;
+   }
+
+   .wrapper-content {
+      width: 67%;
+
    }
 
    .nav-scroll {
@@ -581,6 +610,42 @@
    .nav-button {
       background-color: #E4572E;
       border: none;
+   }
+
+   .menu {
+      width: 25vw;
+      height: 35vh;
+      top: 2rem;
+      right: 1.5rem;
+      padding-top: 1rem;
+   }
+
+   .top-span {
+      padding: 0;
+   }
+
+   .bottom-span {
+      margin-top: 2rem;
+      padding: 0;
+   }
+
+   .span__menu {
+      font-size: 0.80em;
+      margin-bottom: 0.80rem;
+   }
+
+   .span__menu--op {
+      font-size: 1em;
+      margin-bottom: 1rem;
+   }
+
+   .bottom-span-imgs {
+      margin-top: 0;
+   }
+
+   .bottom-span-imgs img {
+      width: 2rem;
+      height: 2rem;
    }
 
    .section2 {

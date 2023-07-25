@@ -4,23 +4,23 @@ const toggleMenu = () => {
    const isMobile = window.matchMedia('(max-width: 699px)').matches;
    const isOpenInMobile = isMobile && isMenuOpen
 
-   if (isOpenInMobile) {
+   if (isMenuOpen) {
       menu.style.display = 'block'
-      menuIcon.setAttribute("disabled", "");
+      buttonIcon.setAttribute('disabled', '');
    } else {
       menu.classList.add('hidden')
       setTimeout(() => {
          menu.style.display = 'none';
          menu.classList.remove('hidden');
-         menuIcon.removeAttribute("disabled")
+         buttonIcon.removeAttribute('disabled')
       }, 500)
    }
-   navLink.style.color = isOpenInMobile ? '#4831d4' : '#ccf381';
 
+   navLink.style.color = isOpenInMobile ? '#4831d4' : '#ccf381';
+   body.style.overflow = isOpenInMobile ? 'hidden' : 'auto';
    menuIcon.classList.replace(
       isOpenInMobile ? 'menu-icon' : 'menu-icon--newcolor',
       isOpenInMobile ? 'menu-icon--newcolor' : 'menu-icon'
    );
 
-   body.style.overflow = isOpenInMobile ? 'hidden' : 'auto';
 }
